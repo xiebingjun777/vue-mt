@@ -1,0 +1,25 @@
+$orange:#ffd100;
+$bc:#e4e4e4;
+$fc:#fff;
+
+@mixin bis($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@mixin sc($size,$color){
+    font-size: $size;
+    color: $color;
+}
+
+@mixin widthHeight($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin lrCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
